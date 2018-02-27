@@ -8,6 +8,8 @@ import org.testng.Assert;
 
 
 public class LoginPage {
+
+	// This is the login page
 	
 	@FindBy(id="username")
 	private WebElement UnTb;
