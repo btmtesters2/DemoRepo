@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\SeleniumWS\dummy\testng.xml</span>
+                    <span>C:\Users\Mallikarjun\Desktop\javacodes\DemoRepo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">8 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,55 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.InvalidLogin" hash-for-method="testInValidLogin">testInValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.ValidLoginLogout" hash-for-method="testValidLoginLogout">testValidLoginLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.InvalidLogin" hash-for-method="testInValidLogin">testInValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.InvalidLogin" hash-for-method="testInValidLogin">testInValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.ValidLoginLogout" hash-for-method="testValidLoginLogout">testValidLoginLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Scripts.ValidLoginLogout" hash-for-method="testValidLoginLogout">testValidLoginLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -151,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Scripts.ValidLoginLogout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,42 +133,57 @@
                   <a name="testValidLoginLogout">
                   </a> <!-- testValidLoginLogout -->
                   <span class="method-name">testValidLoginLogout</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #logoutLink
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: connection reset
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
 System info: host: &apos;AVINASHARADHYA&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:20305/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 802b899f-811b-419b-a5fd-438498130317
-*** Element info: {Using=id, value=logoutLink}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:   0x46c297 - &lt;no info&gt;
+   1:   0x46585e - &lt;no info&gt;
+   2:   0x43c980 - &lt;no info&gt;
+   3:   0x4225f2 - &lt;no info&gt;
+   4:   0x406389 - &lt;no info&gt;
+   5:   0x40cc97 - &lt;no info&gt;
+   6:   0x657a89 - &lt;no info&gt;
+   7:   0x4185b6 - &lt;no info&gt;
+   8:   0x6535a1 - &lt;no info&gt;
+   9: 0x76088744 - BaseThreadInitThunk
+  10: 0x7741582d - RtlGetAppContainerNamedObjectPath
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at POMPage.EnterTimeTrackPage.clickLogoutLink(EnterTimeTrackPage.java:18)
-	at Scripts.ValidLoginLogout.testValidLoginLogout(ValidLoginLogout.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at Scripts.BaseTest.preCondition(BaseTest.java:41)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Scripts.InvalidLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -206,100 +192,64 @@ Session ID: 802b899f-811b-419b-a5fd-438498130317
                   <a name="testInValidLogin">
                   </a> <!-- testInValidLogin -->
                   <span class="method-name">testInValidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //span[text()=&apos;Username or Password is invalid. Please try again.&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: connection reset
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
 System info: host: &apos;AVINASHARADHYA&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27630/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 8395132a-38b1-4327-af73-13fe451613f7
-*** Element info: {Using=xpath, value=//span[text()=&apos;Username or Password is invalid. Please try again.&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:   0x46c297 - &lt;no info&gt;
+   1:   0x46585e - &lt;no info&gt;
+   2:   0x43c980 - &lt;no info&gt;
+   3:   0x4225f2 - &lt;no info&gt;
+   4:   0x406389 - &lt;no info&gt;
+   5:   0x40cc97 - &lt;no info&gt;
+   6:   0x657a89 - &lt;no info&gt;
+   7:   0x4185b6 - &lt;no info&gt;
+   8:   0x6535a1 - &lt;no info&gt;
+   9: 0x76088744 - BaseThreadInitThunk
+  10: 0x7741582d - RtlGetAppContainerNamedObjectPath
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at POMPage.LoginPage.verifyErrmsg(LoginPage.java:41)
-	at Scripts.InvalidLogin.testInValidLogin(InvalidLogin.java:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at Scripts.BaseTest.preCondition(BaseTest.java:41)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Scripts.ValidLoginLogout</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLoginLogout">
-                  </a> <!-- testValidLoginLogout -->
-                  <span class="method-name">testValidLoginLogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLoginLogout">
-                  </a> <!-- testValidLoginLogout -->
-                  <span class="method-name">testValidLoginLogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Scripts.InvalidLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInValidLogin">
-                  </a> <!-- testInValidLogin -->
-                  <span class="method-name">testInValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInValidLogin">
-                  </a> <!-- testInValidLogin -->
-                  <span class="method-name">testInValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\SeleniumWS\dummy\testng.xml</span>
+            <span class="header-content">C:\Users\Mallikarjun\Desktop\javacodes\DemoRepo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestGC&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Scripts.ValidLoginLogout&quot;/&gt;
-      &lt;class name=&quot;Scripts.InvalidLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestGC --&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestFF&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
@@ -307,25 +257,6 @@ Session ID: 8395132a-38b1-4327-af73-13fe451613f7
       &lt;class name=&quot;Scripts.InvalidLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFF --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestIE&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Scripts.ValidLoginLogout&quot;/&gt;
-      &lt;class name=&quot;Scripts.InvalidLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestIE --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestFF&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;/test&gt; &lt;!-- TestFF --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestGC&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;/test&gt; &lt;!-- TestGC --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestGC&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;/test&gt; &lt;!-- TestGC --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestIE&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
-  &lt;/test&gt; &lt;!-- TestIE --&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestFF&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;/test&gt; &lt;!-- TestFF --&gt;
@@ -340,25 +271,7 @@ Session ID: 8395132a-38b1-4327-af73-13fe451613f7
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestGC (2 classes)</span>
-              </li>
-              <li>
                 <span class="test-name">TestFF (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestIE (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestFF (0 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestGC (0 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestGC (0 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestIE (0 classes)</span>
               </li>
               <li>
                 <span class="test-name">TestFF (0 classes)</span>
@@ -387,36 +300,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidLoginLogout')
 data.setCell(0, 2, 'Scripts.ValidLoginLogout')
-data.setCell(0, 3, 11815);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testInValidLogin')
 data.setCell(1, 2, 'Scripts.InvalidLogin')
-data.setCell(1, 3, 11551);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testValidLoginLogout')
-data.setCell(2, 2, 'Scripts.ValidLoginLogout')
-data.setCell(2, 3, 6476);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testValidLoginLogout')
-data.setCell(3, 2, 'Scripts.ValidLoginLogout')
-data.setCell(3, 3, 5929);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testInValidLogin')
-data.setCell(4, 2, 'Scripts.InvalidLogin')
-data.setCell(4, 3, 2223);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testInValidLogin')
-data.setCell(5, 2, 'Scripts.InvalidLogin')
-data.setCell(5, 3, 2040);
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -444,96 +341,22 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@eb405999)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@1226631a)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@7cc72a7c)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testValidLoginLogout</span>
-                <span class="method-start">4168 ms</span>
-              </div> <!-- test-method -->
+                <span class="method-name">preCondition(org.testng.xml.XmlTest@20af78d9)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testValidLoginLogout</span>
-                <span class="method-start">8830 ms</span>
+                <span class="method-start">-1519755402412 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testValidLoginLogout</span>
-                <span class="method-start">14438 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">14760 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Scripts.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@7cc72a7c)</span>
-                <span class="method-start">14990 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">15990 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Scripts.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@1226631a)</span>
-                <span class="method-start">16003 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">20915 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Scripts.InvalidLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testInValidLogin</span>
-                <span class="method-start">21225 ms</span>
+                <span class="method-start">-1519755402412 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class before">
-                <span class="method-name">preCondition(org.testng.xml.XmlTest@eb405999)</span>
-                <span class="method-start">21588 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testInValidLogin</span>
-                <span class="method-start">24676 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">26716 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="test-method">
-                <span class="method-name">testInValidLogin</span>
-                <span class="method-start">31760 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">32779 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">33983 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

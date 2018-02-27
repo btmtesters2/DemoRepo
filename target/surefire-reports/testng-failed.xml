@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" verbose="0" name="TestIE(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
+  <test thread-count="5" verbose="0" name="TestFF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="Scripts.ValidLoginLogout">
         <methods>
@@ -19,5 +19,5 @@
         </methods>
       </class> <!-- Scripts.InvalidLogin -->
     </classes>
-  </test> <!-- TestIE(failed) -->
+  </test> <!-- TestFF(failed) -->
 </suite> <!-- Failed suite [Suite] -->

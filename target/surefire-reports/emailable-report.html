@@ -9,74 +9,141 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">TestGC</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">29,231</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestIE</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">32,804</td><td></td><td></td></tr>
-<tr><td><a href="#t2">TestFF</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">34,903</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">2</th><th class="num">96,938</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestFF</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">10,012</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestGC &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Scripts.InvalidLogin</td><td><a href="#m0">testInValidLogin</a></td><td rowspan="1">1519661512865</td><td rowspan="1">2040</td></tr><tr class="passedodd"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m1">testValidLoginLogout</a></td><td rowspan="1">1519661497019</td><td rowspan="1">5929</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestIE &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Scripts.InvalidLogin</td><td><a href="#m2">testInValidLogin</a></td><td rowspan="1">1519661509414</td><td rowspan="1">11551</td></tr><tr class="failedodd"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m3">testValidLoginLogout</a></td><td rowspan="1">1519661492357</td><td rowspan="1">11815</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">TestFF &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Scripts.InvalidLogin</td><td><a href="#m4">testInValidLogin</a></td><td rowspan="1">1519661519949</td><td rowspan="1">2223</td></tr><tr class="passedodd"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m5">testValidLoginLogout</a></td><td rowspan="1">1519661502627</td><td rowspan="1">6476</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestFF &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m0">preCondition</a></td><td rowspan="1">1519755402412</td><td rowspan="1">9973</td></tr><tr><th colspan="4">TestFF &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">Scripts.InvalidLogin</td><td><a href="#m1">postCondition</a></td><td rowspan="1">1519755412411</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">preCondition</a></td><td rowspan="1">1519755412411</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m3">postCondition</a></td><td rowspan="1">1519755412410</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestFF &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Scripts.InvalidLogin</td><td><a href="#m4">testInValidLogin</a></td><td rowspan="1">1519755412411</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">Scripts.ValidLoginLogout</td><td><a href="#m5">testValidLoginLogout</a></td><td rowspan="1">1519755412410</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>TestGC</h2><h3 id="m0">Scripts.InvalidLogin#testInValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Scripts.ValidLoginLogout#testValidLoginLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestIE</h2><h3 id="m2">Scripts.InvalidLogin#testInValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //span[text()=&apos;Username or Password is invalid. Please try again.&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<h2>TestFF</h2><h3 id="m0">Scripts.ValidLoginLogout#preCondition</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.xml.XmlTest@20af78d9</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: connection reset
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
 System info: host: &apos;AVINASHARADHYA&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:27630/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 8395132a-38b1-4327-af73-13fe451613f7
-*** Element info: {Using=xpath, value=//span[text()=&apos;Username or Password is invalid. Please try again.&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:   0x46c297 - &lt;no info&gt;
+   1:   0x46585e - &lt;no info&gt;
+   2:   0x43c980 - &lt;no info&gt;
+   3:   0x4225f2 - &lt;no info&gt;
+   4:   0x406389 - &lt;no info&gt;
+   5:   0x40cc97 - &lt;no info&gt;
+   6:   0x657a89 - &lt;no info&gt;
+   7:   0x4185b6 - &lt;no info&gt;
+   8:   0x6535a1 - &lt;no info&gt;
+   9: 0x76088744 - BaseThreadInitThunk
+  10: 0x7741582d - RtlGetAppContainerNamedObjectPath
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-	at POMPage.LoginPage.verifyErrmsg(LoginPage.java:41)
-	at Scripts.InvalidLogin.testInValidLogin(InvalidLogin.java:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at Scripts.BaseTest.preCondition(BaseTest.java:41)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Scripts.ValidLoginLogout#testValidLoginLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #logoutLink
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Scripts.InvalidLogin#postCondition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Scripts.InvalidLogin#preCondition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Scripts.ValidLoginLogout#postCondition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Scripts.InvalidLogin#testInValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: connection reset
 Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
 System info: host: &apos;AVINASHARADHYA&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:20305/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 802b899f-811b-419b-a5fd-438498130317
-*** Element info: {Using=id, value=logoutLink}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:   0x46c297 - &lt;no info&gt;
+   1:   0x46585e - &lt;no info&gt;
+   2:   0x43c980 - &lt;no info&gt;
+   3:   0x4225f2 - &lt;no info&gt;
+   4:   0x406389 - &lt;no info&gt;
+   5:   0x40cc97 - &lt;no info&gt;
+   6:   0x657a89 - &lt;no info&gt;
+   7:   0x4185b6 - &lt;no info&gt;
+   8:   0x6535a1 - &lt;no info&gt;
+   9: 0x76088744 - BaseThreadInitThunk
+  10: 0x7741582d - RtlGetAppContainerNamedObjectPath
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at POMPage.EnterTimeTrackPage.clickLogoutLink(EnterTimeTrackPage.java:18)
-	at Scripts.ValidLoginLogout.testValidLoginLogout(ValidLoginLogout.java:18)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at Scripts.BaseTest.preCondition(BaseTest.java:41)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestFF</h2><h3 id="m4">Scripts.InvalidLogin#testInValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Scripts.ValidLoginLogout#testValidLoginLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Scripts.ValidLoginLogout#testValidLoginLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: connection reset
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;AVINASHARADHYA&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:   0x46c297 - &lt;no info&gt;
+   1:   0x46585e - &lt;no info&gt;
+   2:   0x43c980 - &lt;no info&gt;
+   3:   0x4225f2 - &lt;no info&gt;
+   4:   0x406389 - &lt;no info&gt;
+   5:   0x40cc97 - &lt;no info&gt;
+   6:   0x657a89 - &lt;no info&gt;
+   7:   0x4185b6 - &lt;no info&gt;
+   8:   0x6535a1 - &lt;no info&gt;
+   9: 0x76088744 - BaseThreadInitThunk
+  10: 0x7741582d - RtlGetAppContainerNamedObjectPath
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at Scripts.BaseTest.preCondition(BaseTest.java:41)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
